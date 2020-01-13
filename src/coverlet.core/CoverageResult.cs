@@ -43,9 +43,9 @@ namespace Coverlet.Core
         public Modules Modules;
         internal List<InstrumenterResult> InstrumentedResults;
 
-        internal CoverageResult() { }
+        public CoverageResult() { }
 
-        internal void Merge(Modules modules)
+        public void Merge(Modules modules)
         {
             foreach (var module in modules)
             {
